@@ -1,0 +1,47 @@
+.canvas{
+    position:relative;
+    overflow:hidden;
+}
+.menu{
+    list-style: none;
+}
+.item{
+    position: absolute;
+    left:-130px;
+    top:3vh;
+}
+.item li{
+    padding-bottom:20px;
+}
+.content{
+    display:flex;
+}
+.content{
+    width:40vw;
+    height:20vh;
+    background-color:aqua;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.content__button{
+    position:absolute;
+    top:10px;
+    left:10px;
+    height:30px;
+    width:70px;
+}
+.content__button img{
+    width:30px;
+}
+.content__text{
+    font-size:36px;
+}
+
+.canvas .content, canvas .menu{
+    transition: transform 0.5s;
+}
+.canvas.open .content, .canvas.open .menu{
+    transform:translate3d(150px, 0, 0);
+}
